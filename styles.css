@@ -262,7 +262,8 @@ main {
 }
 
 .about__role {
-    margin-top: 1.2em;
+    margin-top: 1.2em
+    text-align: center;
 }
 
 .about__desc {
