@@ -51,7 +51,7 @@ const Hero = () => {
 
           <div className="flex items-center justify-center mt-6 space-x-6">
             <a
-              href="https://github.com/your-github-profile"
+              href="https://github.com/Reizhea"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-300 transition-colors duration-300"
@@ -59,7 +59,7 @@ const Hero = () => {
               <FaGithub className="w-8 h-8" />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin-profile"
+              href="https://linkedin.com/in/nawang-dorjee"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-300 transition-colors duration-300"
