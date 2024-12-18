@@ -1,10 +1,10 @@
 export const navItems = [
-    { name: "Home", link: "#hero" },
-    { name: "Skills", link: "#skills" },
-    { name: "Projects", link: "#projects" },
-    { name: "Certificates", link: "#cert" },
-    { name: "Contact", link: "#contact" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1kQ-IMEqXYiIecGciE24K8GgaHCP2pp2h/view?usp=sharing"}
+    { name: "Home", link: "#hero", icon: "/images/home.png" },
+    { name: "Skills", link: "#skills", icon: "/images/skills.png" },
+    { name: "Projects", link: "#projects", icon: "/images/project.png" },
+    { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
+    { name: "Contact", link: "#contact", icon: "/images/contact.png" },
+    { name: "Resume", link: "https://drive.google.com/file/d/1kQ-IMEqXYiIecGciE24K8GgaHCP2pp2h/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {

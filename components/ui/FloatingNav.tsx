@@ -10,12 +10,12 @@ import { cn } from "@/lib/utils";
 
 export const FloatingNav = ({
   navItems,
-  className,
+  className = "", // Optional className for the container
 }: {
   navItems: {
     name: string;
     link: string;
-    icon?: React.ReactElement;
+    icon?: string; // Icon as a string for image src
   }[];
   className?: string;
 }) => {
@@ -23,16 +23,35 @@ export const FloatingNav = ({
   const [visible, setVisible] = useState(false);
   const [manualHide, setManualHide] = useState(false);
 
+  React.useEffect(() => {
+    const handleInitialScroll = () => {
+      if (scrollY.get() === 0) {
+        setVisible(true);
+      }
+    };
+
+    handleInitialScroll();
+    const unsubscribe = scrollY.onChange(() => {
+      if (scrollY.get() === 0) {
+        setVisible(true);
+      }
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, [scrollY]);
+
   useMotionValueEvent(scrollY, "change", (current) => {
     const previous = scrollY.getPrevious() || 0;
 
     if (!manualHide) {
-      if (current === 0) {
-        setVisible(false);
-      } else if (current < previous) {
-        setVisible(true);
-      } else {
-        setVisible(false);
+      if (current > 0) {
+        if (current < previous) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
       }
     }
   });
@@ -69,7 +88,7 @@ export const FloatingNav = ({
           transition={{ duration: 0.3 }}
           className={cn(
             "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/10 shadow-lg items-center justify-center space-x-4",
-            className
+            className // Append custom container className
           )}
           style={{
             backdropFilter: "blur(16px) saturate(180%)",
@@ -83,12 +102,21 @@ export const FloatingNav = ({
               key={`link-${idx}`}
               href={navItem.link}
               onClick={(e) => handleLinkClick(e, navItem.link)}
-              className="relative dark:text-neutral-50 flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              className="relative flex flex-col items-center text-center space-y-1 text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300"
               target={navItem.link.startsWith("http") ? "_blank" : undefined}
               rel={navItem.link.startsWith("http") ? "noopener noreferrer" : undefined}
             >
-              <span className="block sm:hidden">{navItem.icon}</span>
-              <span className="text-sm !cursor-pointer">{navItem.name}</span>
+              {/* Render icon only on small devices */}
+              {navItem.icon && (
+                <img
+                  src={navItem.icon}
+                  alt=""
+                  className="h-6 w-6 sm:hidden" // Visible only on small devices
+                />
+              )}
+
+              {/* Render text only on larger devices */}
+              <span className="text-sm hidden sm:block">{navItem.name}</span>
             </a>
           ))}
         </motion.div>
