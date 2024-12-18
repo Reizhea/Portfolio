@@ -111,7 +111,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          "flex min-w-full shrink-0 gap-4 py-2 w-max flex-nowrap ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
         style={{
@@ -123,12 +123,11 @@ export const InfiniteMovingCards = ({
             key={`${item.title}-${idx}`}
             className="w-[500px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-8 md:w-[600px] cursor-pointer"
             style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
+              backgroundColor: "#08041c",
             }}
             onClick={() => openModal(item.img)} 
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ">
               <div className="relative z-20 mb-6">
                 <img
                   src={item.img}

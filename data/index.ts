@@ -4,7 +4,7 @@ export const navItems = [
     { name: "Projects", link: "#projects" },
     { name: "Certificates", link: "#cert" },
     { name: "Contact", link: "#contact" },
-    { name: "Resume", link: ""}
+    { name: "Resume", link: "https://drive.google.com/file/d/1kQ-IMEqXYiIecGciE24K8GgaHCP2pp2h/view?usp=sharing"}
   ];
 
   export const technicalSkills = {
@@ -12,6 +12,7 @@ export const navItems = [
       { title: "HTML", imageUrl: "/images/html.png" },
       { title: "CSS", imageUrl: "/images/css.png" },
       { title: "JavaScript", imageUrl: "/images/js.png" },
+      { title: "TypeScript", imageUrl: "/images/ts.png"},
       { title: "Python", imageUrl: "/images/python.png" },
       { title: "Java", imageUrl: "/images/java.png" },
       { title: "PHP", imageUrl: "/images/php.png" },
@@ -27,16 +28,11 @@ export const navItems = [
       { title: "Django", imageUrl: "/images/django.png" },
       { title: "Bootstrap", imageUrl: "/images/bootstrap.png" },
     ],
-    Databases: [
+    "Databases, Cloud & DevOps": [
       { title: "MongoDB", imageUrl: "/images/mongodb.png" },
       { title: "MySQL", imageUrl: "/images/mysql.png" },
-      { title: "Firebase", imageUrl: "/images/firebase.png" },
-    ],
-    "Cloud & DevOps": [
       { title: "AWS", imageUrl: "/images/aws.png" },
-      { title: "MongoDB Atlas", imageUrl: "/images/mongodb.png" },
       { title: "Netlify", imageUrl: "/images/netlify.png" },
-      { title: "Heroku", imageUrl: "/images/heroku.png" },
     ],
     "Tools & Software": [
       { title: "Figma", imageUrl: "/images/figma.png" },

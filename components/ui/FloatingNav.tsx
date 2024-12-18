@@ -21,24 +21,30 @@ export const FloatingNav = ({
 }) => {
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(false);
-  const [manualHide, setManualHide] = useState(false); 
+  const [manualHide, setManualHide] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (current) => {
     const previous = scrollY.getPrevious() || 0;
 
     if (!manualHide) {
       if (current === 0) {
-        setVisible(false); 
+        setVisible(false);
       } else if (current < previous) {
-        setVisible(true); 
+        setVisible(true);
       } else {
-        setVisible(false); 
+        setVisible(false);
       }
     }
   });
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
     e.preventDefault();
+
+    // Check if the link is an external URL
+    if (link.startsWith("http")) {
+      window.open(link, "_blank");
+      return;
+    }
 
     const targetSection = document.querySelector(link);
 
@@ -50,7 +56,7 @@ export const FloatingNav = ({
 
       setTimeout(() => {
         setManualHide(false);
-      }, 700); 
+      }, 700);
     }
   };
 
@@ -73,12 +79,14 @@ export const FloatingNav = ({
             border: "1px solid rgba(255, 255, 255, 0.125)",
           }}
         >
-          {navItems.map((navItem: { name: string; link: string; icon?: React.ReactElement }, idx: number) => (
+          {navItems.map((navItem, idx: number) => (
             <a
               key={`link-${idx}`}
               href={navItem.link}
               onClick={(e) => handleLinkClick(e, navItem.link)}
               className="relative dark:text-neutral-50 flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              target={navItem.link.startsWith("http") ? "_blank" : undefined}
+              rel={navItem.link.startsWith("http") ? "noopener noreferrer" : undefined}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span className="text-sm !cursor-pointer">{navItem.name}</span>

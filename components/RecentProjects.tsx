@@ -11,14 +11,14 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-24">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-24 xl:gap-36 2xl:gap-36">
         {projects.slice(0, 2).map((item, index) => (
           <div key={item.id}>
             <div
-              className="lg:min-h-[28rem] flex items-center justify-center sm:w-[550px] w-[80vw] mt-10 md:mb-12 sm:mb-12"
+              className="lg:min-h-[28rem] flex items-center justify-center sm:w-[550px] w-[80vw] mt-10 md:mb-20 sm:mb-12"
             >
               <PinContainer title={item.title} gitLink={index <= 1 ? item.link : ""}>
-                <div className="relative flex items-center justify-center sm:w-[550px] w-[80vw] overflow-hidden h-[18.2vh] sm:h-[41vh] md:h-[23.5vh] lg:h-[20.2vh] xl:h-[37vh] 2xl:h-[31.5vh] mb-10 rounded-lg">
+                <div className="relative flex items-center justify-center sm:w-[550px] w-[80vw] overflow-hidden h-[18.2vh] sm:h-[20vh] md:h-[22vh] lg:h-[20.2vh] xl:h-[36.5vh] 2xl:h-[31.5vh] mb-10 rounded-lg">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]"
                   >
@@ -76,19 +76,19 @@ const RecentProjects = () => {
       </div>
 
       <div className="flex justify-center items-center w-full mt-20">
-        <h2 className="text-3xl lg:text-4xl font-semibold text-white text-center">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-white text-center md:mb-10">
           Upcoming works
         </h2>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center p-4 gap-24 mt-5">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-24 xl:gap-36 2xl:gap-36">
         {projects.slice(2).map((item, index) => (
           <div key={item.id}>
             <div
-              className="lg:min-h-[28rem] flex items-center justify-center sm:w-[550px] w-[80vw] mt-10 md:mb-12 sm:mb-12"
+              className="lg:min-h-[28rem] flex items-center justify-center sm:w-[550px] w-[80vw] mt-10 md:mb-20 sm:mb-12"
             >
-              <PinContainer title={item.title} gitLink={index <= 1 ? item.link : ""}>
-                <div className="relative flex items-center justify-center sm:w-[550px] w-[80vw] overflow-hidden h-[18.2vh] sm:h-[41vh] md:h-[23.5vh] lg:h-[20.2vh] xl:h-[37vh] 2xl:h-[31.5vh] mb-10 rounded-lg">
+              <PinContainer title={item.title} gitLink={index <= 1 ? item.link : "#"}>
+                <div className="relative flex items-center justify-center sm:w-[550px] w-[80vw] overflow-hidden h-[18.2vh] sm:h-[20vh] md:h-[22vh] lg:h-[20.2vh] xl:h-[36.5vh] 2xl:h-[31.5vh] mb-10 rounded-lg">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]"
                   >

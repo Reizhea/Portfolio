@@ -4,7 +4,7 @@ import { certificates } from "../data/index";
 
 const Certificates = () => {
   return (
-    <div className="pt-2 pb-12 relative z-0 overflow-visible">
+    <div className="py-12 relative z-0 overflow-visible">
       <h1 className="heading text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center">
         CERTIFICATIONS
       </h1>
