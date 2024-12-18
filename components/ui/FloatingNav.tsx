@@ -40,7 +40,6 @@ export const FloatingNav = ({
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
     e.preventDefault();
 
-    // Check if the link is an external URL
     if (link.startsWith("http")) {
       window.open(link, "_blank");
       return;

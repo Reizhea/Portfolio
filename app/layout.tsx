@@ -17,6 +17,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Nawang's Portfolio",
   description: "Everything to know about me",
+  icons: {
+    icon: '/images/favicon.png',
+  },
 };
 
 export default function RootLayout({

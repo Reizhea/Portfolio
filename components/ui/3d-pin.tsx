@@ -28,7 +28,6 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
-  // Conditionally render Link or div
   if (gitLink) {
     return (
       <Link
@@ -62,7 +61,6 @@ export const PinContainer = ({
     );
   }
 
-  // Render a non-clickable div
   return (
     <div
       className={cn(
