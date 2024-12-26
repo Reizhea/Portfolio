@@ -4,7 +4,7 @@ export const navItems = [
     { name: "Projects", link: "#projects", icon: "/images/project.png" },
     { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
     { name: "Contact", link: "#contact", icon: "/images/contact.png" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1kQ-IMEqXYiIecGciE24K8GgaHCP2pp2h/view?usp=sharing", icon: "/images/resume.png"}
+    { name: "Resume", link: "https://drive.google.com/file/d/1_2JOreRJkjLvfSC8K5uKlUvjaTiSd8gt/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {
@@ -33,6 +33,7 @@ export const navItems = [
       { title: "MySQL", imageUrl: "/images/mysql.png" },
       { title: "AWS", imageUrl: "/images/aws.png" },
       { title: "Netlify", imageUrl: "/images/netlify.png" },
+      { title: "Render", imageUrl: "/images/render.png" },
     ],
     "Tools & Software": [
       { title: "Figma", imageUrl: "/images/figma.png" },
@@ -55,6 +56,20 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
+      title: "ShortLinker",
+      des: "ShortLinker is an intuitive and efficient platform for shortening URLs, offering users a streamlined way to manage and share their links.",
+      img: "/images/ShortLinker.jpg",
+      iconLists: [
+        "/images/mongodb.png",
+        "/images/express.png",
+        "/images/react.png",
+        "/images/node.png",
+        "/images/tailwindcss.png",
+      ],
+      link: "https://shrtlinker.netlify.app",
+    },
+    {
+      id: 2,
       title: "Thriftify",
       des: "An innovative online platform promoting sustainable consumption through the sale and purchase of pre-owned clothes.",
       img: "/images/thriftify.jpg",
@@ -67,33 +82,7 @@ export const navItems = [
       ],
       link: "https://github.com/Reizhea/Thriftify",
     },
-    {
-      id: 2,
-      title: "BinaryBucks",
-      des: "A user-friendly online banking system designed to streamline and automate banking operations for customers and administrators.",
-      img: "/images/BinaryBucks.jpg",
-      iconLists: [
-        "/images/html.png",
-        "/images/css.png",
-        "/images/js.png",
-        "/images/php.png",
-        "/images/mysql.png",
-      ],
-      link: "https://github.com/Reizhea/BinaryBucks",
-    },
-    {
-      id: 3,
-      title: "ShortLinker",
-      des: "A MERN stack URL shortener with features like analytics, custom links, and responsive design.",
-      img: "/images/comingsoon.jpg",
-      iconLists: [
-        "/images/mongodb.png",
-        "/images/express.png",
-        "/images/react.png",
-        "/images/node.png",
-        "/images/tailwindcss.png",
-      ],
-    },
+    
     {
       id: 4,
       title: "FocusFlow",
@@ -135,6 +124,10 @@ export const navItems = [
       title: "Hands-on Supervised Machine Learning with Python",
       img: "/images/ML1.jpg",
     },
+    {
+    title: "Step-by-Step Machine Learning with Python",
+    img: "/images/ML2.jpg",
+  },
     {
       title: "Getting Started as a Full-Stack Web Developer",
       img: "/images/WebDev.jpg",
