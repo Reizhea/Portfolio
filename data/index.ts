@@ -68,6 +68,7 @@ export const navItems = [
         "/images/node.png",
         "/images/expo.png",
       ],
+      link: "https://github.com/Reizhea/AlertDrive",
     },
     {
       id: 1,
@@ -110,6 +111,7 @@ export const navItems = [
         "/images/php.png",
         "/images/mysql.png",
       ],
+      link: "https://github.com/Reizhea/BinaryBucks",
     },
   ];
 
