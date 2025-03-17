@@ -60,7 +60,7 @@ const RecentProjects = () => {
                     ))}
                   </div>
 
-                  {index <= 1 && (
+                  {index <= 4 && (
                     <div className="flex justify-center items-center">
                       <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                         Check It Out
