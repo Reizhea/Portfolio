@@ -4,7 +4,7 @@ export const navItems = [
     { name: "Projects", link: "#projects", icon: "/images/project.png" },
     { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
     { name: "Contact", link: "#contact", icon: "/images/contact.png" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1_2JOreRJkjLvfSC8K5uKlUvjaTiSd8gt/view?usp=sharing", icon: "/images/resume.png"}
+    { name: "Resume", link: "https://drive.google.com/file/d/1O5ZHAgptuGjUZXaZH8N3Jd4gm53XrnEv/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {
@@ -20,20 +20,21 @@ export const navItems = [
       { title: "Kotlin", imageUrl: "/images/kotlin.png" },
     ],
     "Frameworks & Libraries": [
-      { title: "React.js", imageUrl: "/images/react.png" },
+      { title: "React.js + Native", imageUrl: "/images/react.png" },
       { title: "Next.js", imageUrl: "/images/next.png" },
       { title: "Node.js", imageUrl: "/images/node.png" },
       { title: "Express.js", imageUrl: "/images/express.png" },
       { title: "TailwindCSS", imageUrl: "/images/tailwindcss.png" },
       { title: "Django", imageUrl: "/images/django.png" },
       { title: "Bootstrap", imageUrl: "/images/bootstrap.png" },
+      { "title": "Expo", "imageUrl": "/images/expo.png" },
     ],
     "Databases, Cloud & DevOps": [
       { title: "MongoDB", imageUrl: "/images/mongodb.png" },
       { title: "MySQL", imageUrl: "/images/mysql.png" },
       { title: "AWS", imageUrl: "/images/aws.png" },
       { title: "Netlify", imageUrl: "/images/netlify.png" },
-      { title: "Render", imageUrl: "/images/render.png" },
+      { title: "Render", imageUrl: "/images/Render.png" },
     ],
     "Tools & Software": [
       { title: "Figma", imageUrl: "/images/figma.png" },
@@ -43,6 +44,7 @@ export const navItems = [
       { title: "Blender", imageUrl: "/images/blender.png" },
       { title: "Autodesk 3ds Max", imageUrl: "/images/3ds.png" },
       { title: "Visual Studio Code", imageUrl: "/images/vscode.png" },
+      { "title": "Postman", "imageUrl": "/images/postman.png" },
     ],
     "Other Skills": [
         { title: "API Integration" , imageUrl:""},
@@ -54,6 +56,19 @@ export const navItems = [
   };
   
   export const projects = [
+    {
+      id: 0,
+      title: "AlertDrive",
+      des: "AlertDrive is a mobile application designed to improve road safety by providing real-time alerts when users enter accident-prone areas.",
+      img: "/images/AlertDrive.jpg",
+      iconLists: [
+        "/images/mongodb.png",
+        "/images/express.png",
+        "/images/react.png",
+        "/images/node.png",
+        "/images/expo.png",
+      ],
+    },
     {
       id: 1,
       title: "ShortLinker",
@@ -84,16 +99,16 @@ export const navItems = [
     },
     
     {
-      id: 4,
-      title: "FocusFlow",
-      des: "A customizable productivity dashboard with Pomodoro timer, task management, and focus tools.",
-      img: "/images/comingsoon.jpg",
+      id: 3,
+      title: "BinaryBucks",
+      des: "BinaryBucks is a user-friendly online banking system designed to streamline and automate banking operations for customers and administrators.",
+      img: "/images/BinaryBucks.jpg",
       iconLists: [
-        "/images/mongodb.png",
-        "/images/express.png",
-        "/images/react.png",
-        "/images/node.png",
-        "/images/tailwindcss.png",
+        "/images/html.png",
+        "/images/css.png",
+        "/images/js.png",
+        "/images/php.png",
+        "/images/mysql.png",
       ],
     },
   ];
