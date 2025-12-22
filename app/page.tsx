@@ -1,4 +1,5 @@
 import Certificates from "@/components/Certificates";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -16,6 +17,9 @@ export default function Home() {
         </section>
         <section id="skills">
           <TechnicalSkills />
+        </section>
+        <section id="experience">
+        <Experience />
         </section>
         <section id="projects">
           <RecentProjects />

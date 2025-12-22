@@ -9,7 +9,7 @@ const RecentProjects = () => {
     <div className="py-12">
       <h1 className="heading text-3xl md:text-4xl lg:text-5xl font-extrabold pb-10">
         A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="text-purple">Recent Projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-24 xl:gap-36 2xl:gap-36">
         {projects.map((item, index) => (

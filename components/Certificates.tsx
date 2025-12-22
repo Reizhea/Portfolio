@@ -5,9 +5,14 @@ import { certificates } from "../data/index";
 const Certificates = () => {
   return (
     <div className="py-12 relative z-0 overflow-visible">
-      <h1 className="heading text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center">
-        CERTIFICATIONS
-      </h1>
+      <div className="py-10" id="testimonials">
+            <h1 className="heading">
+            My
+            <span className=" text-purple"> Certifications </span>
+            </h1>
+            <div className="flex flex-col items-center max-lg:mt-10">
+            </div>
+        </div>
       <div className="flex flex-col items-center ">
         <InfiniteMovingCards className="pt-24"
           items={certificates.map((certificate) => ({

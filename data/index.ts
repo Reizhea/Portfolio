@@ -1,59 +1,67 @@
 export const navItems = [
     { name: "Home", link: "#hero", icon: "/images/home.png" },
     { name: "Skills", link: "#skills", icon: "/images/skills.png" },
+    { name: "Experience", link: "#experience", icon: "/images/experience.png" },
     { name: "Projects", link: "#projects", icon: "/images/project.png" },
     { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
     { name: "Contact", link: "#contact", icon: "/images/contact.png" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1O5ZHAgptuGjUZXaZH8N3Jd4gm53XrnEv/view?usp=sharing", icon: "/images/resume.png"}
+    { name: "Resume", link: "https://drive.google.com/file/d/199b9WDe8hz3nxaR_1q-meuHBhjuylEE8/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {
-    "Programming Languages": [
-      { title: "HTML", imageUrl: "/images/html.png" },
-      { title: "CSS", imageUrl: "/images/css.png" },
-      { title: "JavaScript", imageUrl: "/images/js.png" },
-      { title: "TypeScript", imageUrl: "/images/ts.png"},
-      { title: "Python", imageUrl: "/images/python.png" },
-      { title: "Java", imageUrl: "/images/java.png" },
-      { title: "PHP", imageUrl: "/images/php.png" },
-      { title: "SQL", imageUrl: "/images/sql.png" },
-      { title: "Kotlin", imageUrl: "/images/kotlin.png" },
-    ],
-    "Frameworks & Libraries": [
-      { title: "React.js + Native", imageUrl: "/images/react.png" },
-      { title: "Next.js", imageUrl: "/images/next.png" },
-      { title: "Node.js", imageUrl: "/images/node.png" },
-      { title: "Express.js", imageUrl: "/images/express.png" },
-      { title: "TailwindCSS", imageUrl: "/images/tailwindcss.png" },
-      { title: "Django", imageUrl: "/images/django.png" },
-      { title: "Bootstrap", imageUrl: "/images/bootstrap.png" },
-      { "title": "Expo", "imageUrl": "/images/expo.png" },
-    ],
-    "Databases, Cloud & DevOps": [
-      { title: "MongoDB", imageUrl: "/images/mongodb.png" },
-      { title: "MySQL", imageUrl: "/images/mysql.png" },
-      { title: "AWS", imageUrl: "/images/aws.png" },
-      { title: "Netlify", imageUrl: "/images/netlify.png" },
-      { title: "Render", imageUrl: "/images/Render.png" },
-    ],
-    "Tools & Software": [
-      { title: "Figma", imageUrl: "/images/figma.png" },
-      { title: "Photoshop", imageUrl: "/images/photoshop.png" },
-      { title: "Git", imageUrl: "/images/git.png" },
-      { title: "GitHub", imageUrl: "/images/github.png" },
-      { title: "Blender", imageUrl: "/images/blender.png" },
-      { title: "Autodesk 3ds Max", imageUrl: "/images/3ds.png" },
-      { title: "Visual Studio Code", imageUrl: "/images/vscode.png" },
-      { "title": "Postman", "imageUrl": "/images/postman.png" },
-    ],
-    "Other Skills": [
-        { title: "API Integration" , imageUrl:""},
-        { title: "Agile Development", imageUrl:"" },
-        { title: "Responsive Design", imageUrl:"" },
-        { title: "REST APIs", imageUrl:"" },
-        { title: "Generative AI", imageUrl:"" },
-    ],
-  };
+  "Programming Languages": [
+    { title: "HTML", imageUrl: "/images/html.png" },
+    { title: "CSS", imageUrl: "/images/css.png" },
+    { title: "JavaScript", imageUrl: "/images/js.png" },
+    { title: "TypeScript", imageUrl: "/images/ts.png" },
+    { title: "Python", imageUrl: "/images/python.png" },
+    { title: "Java", imageUrl: "/images/java.png" },
+    { title: "PHP", imageUrl: "/images/php.png" },
+    { title: "SQL", imageUrl: "/images/sql.png" },
+  ],
+  "Frameworks & Libraries": [
+    { title: "React.js + Native", imageUrl: "/images/react.png" },
+    { title: "Next.js", imageUrl: "/images/next.png" },
+    { title: "Node.js", imageUrl: "/images/node.png" },
+    { title: "Express.js", imageUrl: "/images/express.png" },
+    { title: "TailwindCSS", imageUrl: "/images/tailwindcss.png" },
+    { title: "Django", imageUrl: "/images/django.png" },
+    { title: "Bootstrap", imageUrl: "/images/bootstrap.png" },
+    { title: "Redux", imageUrl: "/images/redux.png" },
+    { title: "Framer Motion", imageUrl: "/images/framer.png" },
+  ],
+  "Databases, Cloud & DevOps": [
+    { title: "MongoDB", imageUrl: "/images/mongodb.png" },
+    { title: "MySQL", imageUrl: "/images/mysql.png" },
+    { title: "DuckDB", imageUrl: "/images/duckdb.png" },
+    { title: "Redis", imageUrl: "/images/redis.png" },
+    { title: "AWS", imageUrl: "/images/aws.png" },
+    { title: "Netlify", imageUrl: "/images/netlify.png" },
+    { title: "Render", imageUrl: "/images/Render.png" },
+    { title: "Nginx", imageUrl: "/images/nginx.png" },
+    { title: "Swagger", imageUrl: "/images/swagger.png" },
+  ],
+  "Tools & Software": [
+    { title: "Figma", imageUrl: "/images/figma.png" },
+    { title: "Photoshop", imageUrl: "/images/photoshop.png" },
+    { title: "Git", imageUrl: "/images/git.png" },
+    { title: "GitHub", imageUrl: "/images/github.png" },
+    { title: "Blender", imageUrl: "/images/blender.png" },
+    { title: "Autodesk 3ds Max", imageUrl: "/images/3ds.png" },
+    { title: "Visual Studio Code", imageUrl: "/images/vscode.png" },
+    { title: "Postman", imageUrl: "/images/postman.png" },
+  ],
+  "Other Skills": [
+    { title: "API Integration", imageUrl: ""},
+    { title: "Agile Development" , imageUrl: ""},
+    { title: "Responsive Design" , imageUrl: ""},
+    { title: "REST APIs" , imageUrl: ""},
+    { title: "GraphQL" , imageUrl: ""},
+    { title: "OAuth 2.0" , imageUrl: ""},
+    { title: "WebSockets" , imageUrl: ""},
+    { title: "Generative AI" , imageUrl: ""},
+  ],
+};
   
   export const projects = [
     {
@@ -84,35 +92,6 @@ export const navItems = [
       ],
       link: "https://shrtlinker.netlify.app",
     },
-    {
-      id: 2,
-      title: "Thriftify",
-      des: "An innovative online platform promoting sustainable consumption through the sale and purchase of pre-owned clothes.",
-      img: "/images/thriftify.jpg",
-      iconLists: [
-        "/images/html.png",
-        "/images/css.png",
-        "/images/js.png",
-        "/images/php.png",
-        "/images/mysql.png",
-      ],
-      link: "https://github.com/Reizhea/Thriftify",
-    },
-    
-    {
-      id: 3,
-      title: "BinaryBucks",
-      des: "BinaryBucks is a user-friendly online banking system designed to streamline and automate banking operations for customers and administrators.",
-      img: "/images/BinaryBucks.jpg",
-      iconLists: [
-        "/images/html.png",
-        "/images/css.png",
-        "/images/js.png",
-        "/images/php.png",
-        "/images/mysql.png",
-      ],
-      link: "https://github.com/Reizhea/BinaryBucks",
-    },
   ];
 
   
@@ -123,15 +102,7 @@ export const navItems = [
     },
     {
       title: "Mastering Kotlin for Android Development",
-      img: "/images/MasteringKotlin.jpg",
-    },
-    {
-      title: "Android App Development with Kotlin",
       img: "/images/Kotlin.jpg",
-    },
-    {
-      title: "Advanced Web Development with Django",
-      img: "/images/Django.jpg",
     },
     {
       title: "Career Essentials in Generative AI by Microsoft and LinkedIn",
@@ -150,18 +121,13 @@ export const navItems = [
       img: "/images/WebDev.jpg",
     },
     {
-      title: "Agile Scrum in Practice",
-      img: "/images/Scrum.jpg",
-    },
-    {
       title: "Software Engineering and Agile software development",
       img: "/images/Agile.jpg",
     },
     {
-      title: "Introduction to Psychology",
-      img: "/images/Psych.jpg",
+      title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      img: "/images/aws.jpg",
     },
-    
   ];
 
   export const socialMedia = [
@@ -176,3 +142,33 @@ export const navItems = [
       link: "https://www.linkedin.com/in/nawang-dorjee/",
     },
   ];
+
+  export const experiences = [
+  {
+    id: 1,
+    company: "Kyoto Creative Co.",
+    role: "Full Stack Developer",
+    dateRange: "April 2025 – Present",
+    highlights: ["100,000+ msgs/mo", "150M+ rows", "20GB+ datasets", "70% faster queries", "30% lower sync latency", "2x faster APIs"],
+    tech: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "DuckDB",
+      "Parquet",
+      "Cron Jobs",
+      "React Native",
+      "Firebase Auth",
+      "Google Maps",
+      "QR / Ticketing",
+    ],
+    bullets: [
+      "Developed a unified social messaging inbox integrating Facebook, Instagram, and X APIs, processing 100,000+ messages per month with reliable conversation threading and message sync.",
+      "Built real-time messaging APIs with conversation history, attachments/media handling, and pagination, reducing sync latency by 30% and improving UX consistency across channels.",
+      "Optimized analytics and search workflows on 150M+ rows and 20GB+ datasets using DuckDB/Parquet, reducing query latency by 70% and lowering server costs by 20%.",
+      "Built high-throughput REST APIs for filtering and search, plus cron-based automation for cleanup, notifications, and access logging, improving API response times by 2x.",
+      "Developed React Native Android features including onboarding and authentication (Firebase), location-based discovery (Maps + geolocation), and category/mood-based filtering.",
+      "Implemented ticketing and booking flows with checkout redirects and booking state management, plus QR-code based ticket display/scanning for entry validation.",
+    ],
+  },
+];

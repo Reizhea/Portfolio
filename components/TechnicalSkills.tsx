@@ -6,9 +6,14 @@ import { HoverBorderGradient } from "./ui/hover-border-gradient";
 const TechnicalSkills = () => {
   return (
     <section className="my-12">
-      <h2 className="heading text-3xl md:text-4xl lg:text-5xl font-extrabold pt-10 pb-10">
-        TECHNICAL SKILLS
-      </h2>
+      <div className="py-20">
+            <h1 className="heading">
+            My
+            <span className=" text-purple"> Technical Skills </span>
+            </h1>
+            <div className="flex flex-col items-center max-lg:mt-10">
+            </div>
+        </div>
 
       <div className="space-y-6">
         {Object.entries(technicalSkills).map(([skillType, skillList], index) => (
