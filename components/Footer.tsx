@@ -11,9 +11,14 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-4 text-center text-xl">
         Looking for a dedicated developer to turn your vision into reality?<br/> I’m here to help. Reach out, and let’s explore how I can contribute to your project’s success.
         </p>
-        <a href="mailto:nawangdorjee798@gmail.com">
-          <MagicButton title="Let's Talk" icon={<FaLocationArrow />} position="right" />
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="mailto:nawangdorjee798@gmail.com">
+            <MagicButton title="Let's Talk" icon={<FaLocationArrow />} position="right" />
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nawangdorjee798@gmail.com" target="_blank" rel="noopener noreferrer">
+            <MagicButton title="Send me an Email" icon={<FaLocationArrow />} position="right" />
+          </a>
+        </div>
       </div>
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
