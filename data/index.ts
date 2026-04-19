@@ -5,7 +5,7 @@ export const navItems = [
     { name: "Projects", link: "#projects", icon: "/images/project.png" },
     { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
     { name: "Contact", link: "#contact", icon: "/images/contact.png" },
-    { name: "Resume", link: "https://drive.google.com/file/d/199b9WDe8hz3nxaR_1q-meuHBhjuylEE8/view?usp=sharing", icon: "/images/resume.png"}
+    { name: "Resume", link: "https://drive.google.com/file/d/1CdQeOqOjJrA8SFA9STFaIi3SZu137FSb/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {
@@ -172,7 +172,7 @@ export const navItems = [
     id: 1,
     company: "Kyoto Creative Co.",
     role: "Full Stack Developer",
-    dateRange: "April 2025 – Present",
+    dateRange: "April 2025 - March 2026",
     highlights: ["100,000+ msgs/mo", "150M+ rows", "20GB+ datasets", "70% faster queries", "30% lower sync latency", "2x faster APIs"],
     tech: [
       "React.js",
