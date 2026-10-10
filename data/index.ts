@@ -5,7 +5,7 @@ export const navItems = [
     { name: "Projects", link: "#projects", icon: "/images/project.png" },
     { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
     { name: "Contact", link: "#contact", icon: "/images/contact.png" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1CdQeOqOjJrA8SFA9STFaIi3SZu137FSb/view?usp=sharing", icon: "/images/resume.png"}
+    { name: "Resume", link: "https://drive.google.com/file/d/1ok6FzyIlbRzNv43owJY1k6cf5yCBFQlm/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {
@@ -168,6 +168,19 @@ export const navItems = [
   ];
 
   export const experiences = [
+  {
+    id: 2,
+    company: "The Boring Education",
+    role: "Software Developer Intern",
+    dateRange: "April 2026 - August 2026 (Remote)",
+    highlights: ["Reusable components", "Responsive interfaces", "API integration"],
+    tech: ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+    bullets: [
+      "Built responsive and reusable React components for course and content interfaces, improving consistency across desktop and mobile layouts.",
+      "Debugged and resolved frontend issues, refactored existing components, and improved component structure, maintainability, and code reuse across the application.",
+      "Integrated frontend functionality with application APIs and existing data flows, handling loading, error, and dynamic UI states within the Next.js application.",
+    ],
+  },
   {
     id: 1,
     company: "Kyoto Creative Co.",
