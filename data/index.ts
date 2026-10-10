@@ -172,10 +172,11 @@ export const navItems = [
     id: 2,
     company: "The Boring Education",
     role: "Software Developer Intern",
-    dateRange: "April 2026 - August 2026 (Remote)",
+    dateRange: "April 2026 - August 2026",
     highlights: ["Reusable components", "Responsive interfaces", "API integration"],
-    tech: ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+    tech: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "REST APIs", ],
     bullets: [
+      "Contributed to an open-source education platform using Next.js, React.js, TypeScript, and Tailwind CSS, developing reusable frontend features and components.",
       "Built responsive and reusable React components for course and content interfaces, improving consistency across desktop and mobile layouts.",
       "Debugged and resolved frontend issues, refactored existing components, and improved component structure, maintainability, and code reuse across the application.",
       "Integrated frontend functionality with application APIs and existing data flows, handling loading, error, and dynamic UI states within the Next.js application.",
