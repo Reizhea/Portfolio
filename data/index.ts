@@ -5,7 +5,7 @@ export const navItems = [
     { name: "Projects", link: "#projects", icon: "/images/project.png" },
     { name: "Certificates", link: "#cert", icon: "/images/cert.png" },
     { name: "Contact", link: "#contact", icon: "/images/contact.png" },
-    { name: "Resume", link: "https://drive.google.com/file/d/1ok6FzyIlbRzNv43owJY1k6cf5yCBFQlm/view?usp=sharing", icon: "/images/resume.png"}
+    { name: "Resume", link: "https://drive.google.com/file/d/1dcb09xbvdbEBwypAUyz4wy12CM9VaOPi/view?usp=sharing", icon: "/images/resume.png"}
   ];
 
   export const technicalSkills = {
